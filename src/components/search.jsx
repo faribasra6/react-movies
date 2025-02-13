@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 const Search = ({searchState, setSearchState}  ) => {
     
@@ -14,7 +14,7 @@ const Search = ({searchState, setSearchState}  ) => {
           />
         </div>
       </div>
-          
+
     );
 };
 

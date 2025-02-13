@@ -93,55 +93,56 @@
     }
 }
 
-  .all-movies {
-    @apply space-y-9;
+.all-movies {
+  @apply w-full max-w-7xl mx-auto px-4 space-y-9;
 
-    & ul {
-      @apply grid grid-cols-1 gap-5 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
-    }
+  & ul {
+    @apply grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
   }
 
-  .movie-card {
-    @apply bg-dark-100 p-5 rounded-2xl shadow-inner shadow-light-100/10;
-
-    & img {
-      @apply rounded-lg h-auto w-full;
-    }
-
-    & h3 {
-      @apply text-white font-bold text-base line-clamp-1;
-    }
-
-    & .content {
-      @apply mt-2 flex flex-row items-center flex-wrap gap-2;
-    }
-
-    & .rating {
-      @apply flex flex-row items-center gap-1;
-    }
-
-    & .rating img {
-      @apply size-4 object-contain;
-    }
-
-    & .rating p {
-      @apply font-bold text-base text-white;
-    }
-
-    & .content span {
-      @apply text-sm text-gray-100;
-    }
-
-    & .content .lang {
-      @apply capitalize text-gray-100 font-medium text-base;
-    }
-
-    & .content .year {
-      @apply text-gray-100 font-medium text-base;
-    }
+  & li {
+    @apply bg-gray-800 p-4 rounded-lg shadow-lg;
   }
 }
 
+
+.movie-card {
+  @apply bg-gray-900 p-5 rounded-2xl shadow-inner shadow-gray-500/10;
+
+  & img {
+    @apply rounded-lg h-auto w-full;
+  }
+
+  & h3 {
+    @apply text-white font-bold text-base truncate; /* Changed from line-clamp-1 */
+  }
+
+  & .content {
+    @apply mt-2 flex flex-row items-center flex-wrap gap-2;
+  }
+
+  & .rating {
+    @apply flex flex-row items-center gap-1;
+  }
+
+  & .rating img {
+    @apply h-4 w-4 object-contain; /* Ensuring compatibility */
+  }
+
+  & .rating p {
+    @apply font-bold text-base text-white;
+  }
+
+  & .content span {
+    @apply text-sm text-gray-400; /* Changed from text-gray-100 for better contrast */
+  }
+
+  & .content .lang,
+  & .content .year {
+    @apply capitalize text-gray-300 font-medium text-base;
+  }
+}
+}
 @utility text-gradient {
   @apply bg-linear-to-r from-[#D6C7FF] to-[#AB8BFF] bg-clip-text text-transparent;
 }
