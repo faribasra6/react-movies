@@ -1,5 +1,5 @@
 # Movie Search App
-![](images/4.png)
+![Screenshot](images/4.png)
 ## Overview
 The **Movie Search App** is a React + Vite application that allows users to discover the latest movies, search for specific titles, and view the top 5 most searched movies. The app utilizes an API to fetch real-time movie data and provides a seamless user experience with Tailwind CSS for styling.
 
@@ -17,18 +17,27 @@ The **Movie Search App** is a React + Vite application that allows users to disc
 ## Installation & Setup
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/movie-search-app.git
-   cd movie-search-app
+   git clone https://github.com/faribasra6/react-movies.git
+   cd react-movies
    ```
 2. **Install dependencies:**
    ```sh
    npm install
    ```
-3. **Start the development server:**
+3. **Create environment variables file:**
+   Create a `.env.local` file in the root directory and add the following:
+   ```sh
+   VITE_TMDB_API_KEY=your_api_key_here
+   VITE_APPWRITE_PROJECT_ID=your_project_id_here
+   VITE_APPWRITE_DATABASE_ID=your_database_id_here
+   VITE_APPWRITE_COLLECTION_ID=your_collection_id_here
+  
+   ```
+4. **Start the development server:**
    ```sh
    npm run dev
    ```
-4. **Open the app:**
+5. **Open the app:**
    Visit `http://localhost:5173/` in your browser.
 
 ## Usage
@@ -49,3 +58,4 @@ Feel free to fork this repository and submit pull requests for improvements.
 For any queries or collaboration opportunities, reach out to **Farhan Shafaqat**:  
 📧 Email: farhanshafaqatbasra@gmail.com  
 📍 Location: Sharjah, UAE
+
